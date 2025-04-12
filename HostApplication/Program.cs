@@ -1,3 +1,5 @@
+using SharedComponents.Models;
+
 namespace HostApplication
 {
     public class Program
@@ -5,6 +7,9 @@ namespace HostApplication
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.Configure<EmbeddedAppConfiguration>(builder.Configuration.GetSection("EmbeddedAppConfiguration"));
+            builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

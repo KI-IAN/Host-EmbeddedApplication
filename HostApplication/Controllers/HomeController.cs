@@ -1,6 +1,6 @@
-using System.Diagnostics;
 using HostApplication.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace HostApplication.Controllers
 {

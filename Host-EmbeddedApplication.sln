@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostApplication", "HostAppl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedApplication", "EmbeddedApplication\EmbeddedApplication.csproj", "{89513ADF-FFCA-416E-BAF0-F8130E925418}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedComponents", "SharedComponents\SharedComponents.csproj", "{0E946B58-6EF9-4D85-9E59-DE9D11C8B75C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{89513ADF-FFCA-416E-BAF0-F8130E925418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89513ADF-FFCA-416E-BAF0-F8130E925418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89513ADF-FFCA-416E-BAF0-F8130E925418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E946B58-6EF9-4D85-9E59-DE9D11C8B75C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E946B58-6EF9-4D85-9E59-DE9D11C8B75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E946B58-6EF9-4D85-9E59-DE9D11C8B75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E946B58-6EF9-4D85-9E59-DE9D11C8B75C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
