@@ -1,4 +1,6 @@
+using SharedComponents.Interfaces;
 using SharedComponents.Models;
+using SharedComponents.Services;
 
 namespace HostApplication
 {
@@ -8,8 +10,12 @@ namespace HostApplication
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddHttpClient();
+
             builder.Services.Configure<EmbeddedAppConfiguration>(builder.Configuration.GetSection("EmbeddedAppConfiguration"));
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
+
+            builder.Services.AddScoped<IHtmlParser, HtmlParser>();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

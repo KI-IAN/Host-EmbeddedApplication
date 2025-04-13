@@ -6,7 +6,7 @@ namespace EmbeddedApplication.Controllers
 {
     public class AuthenticationController : Controller
     {
-        public IActionResult SingleSignOn()
+        public IActionResult SingleSignOn(string updateRelativeToAbsolutePath)
         {
             try
             {
@@ -23,6 +23,8 @@ namespace EmbeddedApplication.Controllers
                     JwtToken = jwtToken,
                     UserClaims = userClaims ?? [] // Avoid null issues
                 };
+
+                ViewData["updateRelativeToAbsolutePath"] = updateRelativeToAbsolutePath;
 
                 return View(model);
             }
