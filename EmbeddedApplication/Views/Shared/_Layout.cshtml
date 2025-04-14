@@ -4,7 +4,7 @@
     if (ViewData.ContainsKey("updateRelativeToAbsolutePath") &&
         ViewData["updateRelativeToAbsolutePath"]?.ToString() == SharedComponents.Constants.AppConstants.UpdateRelativeToAbsolutePathInEmbeddedApp)
     {
-        baseUrl = $"{ViewContext?.HttpContext?.Request?.Scheme}://{ViewContext?.HttpContext?.Request?.Host}";
+        baseUrl = $"https://{ViewContext?.HttpContext?.Request?.Host}";
     }
 }
 
