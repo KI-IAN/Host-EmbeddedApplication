@@ -57,6 +57,3 @@ The Proxy API method provides a secure way to pass sensitive information like JW
 - Explore session handling.
 - Implement logging and monitoring for the Proxy API to track usage and detect potential security issues.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
